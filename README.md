@@ -1,1 +1,1 @@
-# CodeclausepersonalBlog
+# CodeClause_personal_blog
