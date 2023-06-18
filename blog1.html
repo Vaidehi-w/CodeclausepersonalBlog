@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The World in 50 Years</title>
+    <style>
+        body {
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 60px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        p {
+            color: #666;
+            line-height: 1.5;
+            font-size: 15px;
+
+        }
+
+        img {
+            width: 100px;
+            height:90px;
+            margin-bottom: 20px;
+        }
+
+         form {
+            margin-top: 20px;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        strong{
+            color:blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>The World in upcoming 50 Years</h1>
+
+    <img src="images/future-city.jpeg" alt="Future City">
+
+    <p>As we look ahead to the future, it's both exciting and daunting to imagine what the world will be like in 50 years.
+        Technology is advancing at an unprecedented pace, and it's inevitable that these advancements will shape our
+        society, environment, and the way we live our lives.</p>
+
+    <p><strong>1. Sustainable Living:</strong> With the growing concerns about climate change, it's expected that the
+        world will prioritize sustainable living in the next 50 years. Renewable energy sources such as solar and wind
+        power will become the primary sources of energy. Smart cities will be designed with energy-efficient buildings,
+        advanced waste management systems, and improved public transportation networks.
+        In the coming decades, sustainable development will guide our actions, policies, and innovations, ensuring a harmonious coexistence between humans and the planet. By embracing sustainability, 
+        we can create a world that is resilient, equitable, and prosperous for generations to come.</p>
+
+    <img src="images/future-energy.png" alt="Future Energy">
+
+    <p><strong>2. Artificial Intelligence:</strong> AI will continue to revolutionize various aspects of our lives.
+        Advanced AI systems will be integrated into everyday devices, making our homes, workplaces, and transportation
+        more efficient. Personalized virtual assistants will be the norm, providing us with personalized recommendations
+        and automating routine tasks. However, ethical concerns and regulation of AI will also become crucial in ensuring
+        its responsible and fair usage.AI will increasingly focus on collaborating with humans,
+        augmenting our capabilities rather than replacing us. Advanced AI systems will work alongside professionals in
+        various fields, providing valuable insights, automating repetitive tasks, and enhancing overall productivity. The
+        synergy between humans and AI will lead to innovative solutions and breakthrough discoveries.</p>
+
+    <img src="images/future-ai.jpg" alt="Future AI">
+
+    <p><strong>3. Healthcare and Longevity:</strong> Medical advancements will extend human lifespan and improve overall
+        health. Genetic engineering, nanotechnology, and breakthrough treatments will be commonplace. Diseases that are
+        currently incurable may become manageable or eradicated entirely. Telemedicine and remote healthcare will be
+        readily accessible, connecting patients with doctors from anywhere in the world.Advancements in genomics, precision medicine, and AI will enable
+        personalized treatment plans. Genetic testing will become routine, allowing doctors to tailor therapies and
+        medications to an individual's unique genetic makeup. Precision medicine will improve treatment efficacy and
+        minimize adverse effects.</p>
+
+    <img src="images/future-healthcare.jpg" alt="Future Healthcare">
+
+    <p><strong>4. Space Exploration:</strong> With ongoing missions to Mars and beyond, space exploration will reach new
+        heights in the next 50 years. Human settlements on other planets or space stations might become a reality.
+        Advancements in propulsion technology and resource utilization will enable us to venture further into the
+        universe. The quest for extraterrestrial life will continue, and we may discover evidence of life beyond Earth.Advancements in propulsion technology and spacecraft design may enable
+        interstellar travel within our solar system and beyond. Breakthroughs in concepts like warp drives or
+        antimatter-powered propulsion systems could shorten travel times and make interstellar exploration a reality.
+        Humans might embark on missions to distant star systems and potentially encounter other civilizations.</p>
+
+    <img src="images/future-space.png" alt="Future Space">
+
+    <p><strong>5. Global Connectivity:</strong> The world will be more interconnected than ever before. High-speed
+        internet access will be available to every corner of the globe, bridging the digital divide. Virtual reality and
+        augmented reality will transform how we learn, work, and interact with others. Communication barriers will
+        diminish as real-time translation technologies become seamless and effortless.The Internet of Things will permeate every aspect of our
+        lives. Smart homes, cities, transportation systems, and infrastructure will be interconnected, enhancing
+        efficiency, convenience, and sustainability. IoT devices will seamlessly communicate with each other,
+        facilitating automation, data-driven decision-making, and personalized experiences.</p>
+
+    <img src="images/future-connectivity.jpeg" alt="Future Connectivity">
+
+    <p>While these predictions are based on the current trajectory of technological advancements, it's important to
+        remember that the future is uncertain, and unexpected events can shape the world in unimaginable ways. However,
+        by envisioning a future that embraces sustainability, innovation, and inclusivity, we can strive to create a
+        world that benefits all of humanity.</p>
+
+    <p>What are your thoughts on the future? How do you imagine the world will be in 50 years? Share your ideas and
+        predictions in the comments below!</p>
+
+         <h2>Leave a Comment</h2>
+    <form id="commentForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <textarea id="comment" placeholder="Your Comment" required></textarea>
+        <input type="submit" value="Submit Comment">
+    </form>
+
+    <h2>Comments</h2>
+    <ul id="commentList"></ul>
+
+    <script>
+        // React to comments
+        document.getElementById("commentForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            // Get input values
+            var name = document.getElementById("name").value;
+            var comment = document.getElementById("comment").value;
+
+            // Create comment element
+            var commentElement = document.createElement("li");
+            commentElement.innerHTML = "<strong>" + name + ":</strong> " + comment;
+
+            // Append comment to list
+            document.getElementById("commentList").appendChild(commentElement);
+
+            // Clear form fields
+            document.getElementById("name").value = "";
+            document.getElementById("comment").value = "";
+        });
+    </script>
+</body>
+
+</html>
